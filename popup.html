@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Control and More</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <button id="btnVideoControl">Video Control</button>
+        <button id="btnColorAdjustment">Color Manipulation</button>
+        <button id="btnTimers">Timers</button>
+    </div>
+    
+    <div id="videoControlSection" style="display: none;">
+      <button id="btnReset">Reset</button>
+      <input type="number" id="inputSpeed" placeholder="Speed %" min="1">
+      <button id="btnSetSpeed">Set Speed</button>
+      <button id="btnDownloadVideo">Download Video</button>
+      <button id="btnBackToMain">Back</button>
+    </div>
+
+    <div id="colorAdjustmentSection" class="grid-container-1" style="display: none;">
+      <button id="btnRedBlind">Red Blind Mode</button>
+      <button id="btnGreenBlind">Green Blind Mode</button>
+      <button id="btnBlueBlind">Blue Blind Mode</button>
+      <button id="btnMonochrome">Monochrome</button>
+      <button id="btnBlindness">Blindness</button>
+      <button id="btnBackToMainFromColor">Back</button>
+    </div>
+
+    <div id="timerSection" style="display:none;">
+      <input type="text" id="timerInput" placeholder="hh:mm:ss">
+      <button id="setTimer">Set Timer</button>
+      <button id="btnBackToMainFromTimer">Back</button>
+  </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

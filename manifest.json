@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Weird eXtension",
+    "version": "1.0",
+    "description": "This extension was made by a person with severe ADHD who couldn't decide between controlling video speed, adjusting colors and an alarm timer extension. The end result is a frankenstein.",
+    "permissions": [
+      "activeTab",
+      "downloads",
+      "scripting",
+      "alarms",
+      "notifications"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/Rob16.png",
+        "48": "images/Rob48.png",
+        "128": "images/Rob128.png"
+      }
+    },
+    "icons": {
+      "16": "images/Rob16.png",
+      "48": "images/Rob48.png",
+      "128": "images/Rob128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+          "resources": ["colorBlindness.js", "songs/song.mp3"],
+          "matches": ["<all_urls>"]
+      }
+  ]
+}
+  
